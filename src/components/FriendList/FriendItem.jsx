@@ -4,9 +4,9 @@ import { Item, Status, Avatar, Name } from './FriendList.styled';
 export function FriendItem({ avatar, name, isOnline }) {
   return (
     <Item>
-      <Status>{isOnline}</Status>
+      <Status status={isOnline}>{isOnline}</Status>
       <Avatar src={avatar} alt={name} width="48" />
-      <Name>{name}</Name>
+      <Name status={isOnline}>{name}</Name>
     </Item>
   );
 }

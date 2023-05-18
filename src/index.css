@@ -1,5 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #e7eef7;
@@ -36,4 +40,16 @@ ul {
   --accent: #7c89cc;
   --light-grey: #e7eef7;
   --white: #ffffff;
+  --green: linear-gradient(
+    135deg,
+    rgba(59, 148, 29, 1) 0%,
+    rgba(41, 201, 73, 1) 55%,
+    rgba(11, 242, 127, 1) 100%
+  );
+  --red: linear-gradient(
+    135deg,
+    rgba(235, 55, 12, 1) 0%,
+    rgba(231, 88, 73, 0.9836309523809523) 55%,
+    rgba(237, 119, 87, 1) 100%
+  );
 }
