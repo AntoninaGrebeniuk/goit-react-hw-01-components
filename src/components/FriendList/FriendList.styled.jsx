@@ -34,11 +34,13 @@ const bgColorIsOnline = props => {
 };
 
 export const Status = styled.span`
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 
   background: ${bgColorIsOnline};
+  border: 3px solid var(--light-grey);
   border-radius: 50%;
+  box-shadow: -2px -2px 5px var(--white), 3px 3px 5px rgba(0, 0, 0, 0.1);
 `;
 
 export const Avatar = styled.img`
